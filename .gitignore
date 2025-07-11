@@ -1,0 +1,91 @@
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Test files
+test_*
+*_test.py
+simple_server_test.py
+
+# Ollama models (large files)
+ollama_models/*.bin
+ollama_models/*.gguf
+
+# Training data (potentially large)
+training_data/*/
+!training_data/.gitkeep
+
+# Outputs and temp
+outputs/
+temp/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files
+training_data/downloaded/
+training_data/processed/
+outputs/models/
+outputs/generated/
+
+# API keys and secrets
+.env
+config.ini
+secrets.json
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Logs
+logs/
+*.log
+
+# Ollama models (large files)
+ollama_models/*.gguf
+ollama_models/*.bin
+
+# Generated datasets
+*.jsonl
+*.parquet
+large_datasets/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
