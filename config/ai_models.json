@@ -1,0 +1,59 @@
+{
+  "recommended_models": {
+    "chat_models": [
+      {
+        "name": "wizard-uncensored:7b",
+        "size": "4.7GB",
+        "description": "Main conversational model - uncensored, creative",
+        "download_command": "ollama pull wizard-uncensored:7b",
+        "recommended": true,
+        "use_case": "complex conversations, art analysis, creative tasks",
+        "context_length": 8192
+      },
+      {
+        "name": "gemma3:1b", 
+        "size": "1.3GB",
+        "description": "Ultra-lightweight model for quick prompt generation",
+        "download_command": "ollama pull gemma3:1b",
+        "recommended": true,
+        "use_case": "fast prompt generation, simple tasks",
+        "context_length": 128000
+      },
+      {
+        "name": "llama3.2:3b",
+        "size": "2.0GB",
+        "description": "Balanced model for general conversations",
+        "download_command": "ollama pull llama3.2:3b",
+        "recommended": true,
+        "use_case": "general chat, balanced performance",
+        "context_length": 131072
+      }
+    ],
+    "specialized_models": [
+      {
+        "name": "codellama:7b",
+        "size": "3.8GB",
+        "description": "Code generation and analysis",
+        "download_command": "ollama pull codellama:7b",
+        "recommended": false,
+        "use_case": "code generation, technical analysis",
+        "context_length": 16384
+      },
+      {
+        "name": "mistral:7b",
+        "size": "4.1GB",
+        "description": "General purpose, fast inference",
+        "download_command": "ollama pull mistral:7b",
+        "recommended": false,
+        "use_case": "fast general conversations",
+        "context_length": 32768
+      }
+    ]
+  },
+  "model_mapping": {
+    "main": "wizard-uncensored:7b",
+    "quick": "gemma3:1b",
+    "balanced": "llama3.2:3b",
+    "code": "codellama:7b"
+  }
+}
